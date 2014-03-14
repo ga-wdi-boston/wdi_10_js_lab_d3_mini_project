@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json {render json: @projects, root: false }
+      format.json {render json: @projects, root: false}
     end
   end
 end

@@ -12,38 +12,18 @@ $(document).ready(function(){
       .attr("height", diameter)
       .attr("class", "bubble");
 
-  var remoteData = {},
-    remoteSuccessHandler;
-
-  // $.get('/projects/index.json')
-  //   .success(remoteSuccessHandler.bind(this));
-
-  // remoteSuccessHandler = function(data){
-  //   var entry;
-  //   console.log("success");
-
-  //   data.forEach(function(el){
-  //       entry = {};
-  //       entry['fillKey'] = el.fill_color;
-  //       entry['reincarcerated'] = el.reincarcerated;
-  //       entry['popAtRisk'] = el.pop_at_risk;
-  //       entry['percent'] = el.percent;
-  //       remoteData[el.name] = entry;
-  //   });
-  // };
-
   d3.json("/projects/index.json", function(error, data) { // retrieving the json, and passing a function
     var node = svg.selectAll(".node")
         .data(data)
-      .enter().append("g") // For each data element, append g, and set the following attributes
+      .enter().append("g")
         .attr("class", "node")
-        .attr("transform", function(d) { return "translate(" + 300 + "," + 300 + ")"; });
+        .attr("transform", function(d, index) { return "translate(" + 30 + "," + 30 + ")"; });
 
     node.append("title") // For each node, append a title of the name of the project
         .text(function(d) { return d.name });
 
     node.append("circle") // For each node, append a circle element
-        .attr("r", 30)
+        .attr("r", function(d) { return d.funding * .00001 })
         .style("fill", function(d) { return color(d.category); });
 
     node.append("text") // For each node, append text
