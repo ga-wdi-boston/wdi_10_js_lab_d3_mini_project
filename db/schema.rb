@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20140314140503) do
     t.text     "program"
     t.text     "assist_type"
     t.integer  "year"
-    t.integer  "amount"
+    t.integer  "amount",      limit: 8
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -30,6 +30,10 @@ ActiveRecord::Schema.define(version: 20140314140503) do
 
   create_table "countries", force: true do |t|
     t.text     "name"
+    t.integer  "econ_aid",        limit: 8
+    t.integer  "mil_aid",         limit: 8
+    t.integer  "total_aid",       limit: 8
+    t.integer  "life_expectancy"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

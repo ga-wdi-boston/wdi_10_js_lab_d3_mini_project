@@ -6,4 +6,7 @@ namespace :import do
     PrescottImport.import_assistance
   end
 
+  task life_expectancy: :environment do
+    PrescottImport.import_life_exp
+  end
 end

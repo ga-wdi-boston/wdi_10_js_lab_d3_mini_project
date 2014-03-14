@@ -5,7 +5,7 @@ class CreateAssistances < ActiveRecord::Migration
       t.text :program
       t.text :assist_type
       t.integer :year
-      t.integer :amount
+      t.column :amount, :bigint
 
       t.timestamps
     end
