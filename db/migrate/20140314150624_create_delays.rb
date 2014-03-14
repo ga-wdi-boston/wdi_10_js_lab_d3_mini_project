@@ -6,6 +6,8 @@ class CreateDelays < ActiveRecord::Migration
       t.integer :arrival_delay
       t.integer :departure_delay
       t.integer :year
+      t.string :origin_code
+      t.string :destination_code
 
       t.timestamps
     end

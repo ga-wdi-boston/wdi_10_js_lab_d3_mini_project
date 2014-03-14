@@ -18,8 +18,6 @@ ActiveRecord::Schema.define(version: 20140314150624) do
 
   create_table "carriers", force: true do |t|
     t.string   "carrier_code"
-    t.string   "origin_code"
-    t.string   "destination_code"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -30,6 +28,8 @@ ActiveRecord::Schema.define(version: 20140314150624) do
     t.integer  "arrival_delay"
     t.integer  "departure_delay"
     t.integer  "year"
+    t.string   "origin_code"
+    t.string   "destination_code"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

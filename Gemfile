@@ -11,6 +11,9 @@ gem 'active_model_serializers'
 gem 'd3_rails'
 gem 'topojson-rails'
 gem 'quiet_assets'
+gem 'pry-rails'
+gem 'pry-nav'
+gem 'pry-stack_explorer'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
