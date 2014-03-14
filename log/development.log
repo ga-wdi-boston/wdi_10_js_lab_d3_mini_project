@@ -1,0 +1,15 @@
+  [1m[36m (38.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (61.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (3.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCarriers (20140314150507)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (34.0ms)[0m  [1mCREATE TABLE "carriers" ("id" serial primary key, "carrier_code" character varying(255), "origin_code" character varying(255), "destination_code" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (16.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314150507"]]
+  [1m[36m (11.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDelays (20140314150624)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (20.6ms)[0m  [1mCREATE TABLE "delays" ("id" serial primary key, "day_of_week" integer, "carrier_id" integer, "arrival_delay" integer, "departure_delay" integer, "year" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.5ms)[0m  CREATE INDEX "index_delays_on_carrier_id" ON "delays" ("carrier_id")
+  [1m[36mSQL (22.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140314150624"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
