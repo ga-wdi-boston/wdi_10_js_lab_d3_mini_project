@@ -16,4 +16,4 @@ tmp
 .yardoc
 _yardoc
 doc/
-/data/data.csv
+data/names_data.csv
