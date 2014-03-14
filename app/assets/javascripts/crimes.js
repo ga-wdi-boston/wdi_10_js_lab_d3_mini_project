@@ -121,7 +121,7 @@ $(document).ready(function() {
             for (var i = 0; i < groups.length; i++){
               count += d[groups[i]];
             }
-            return (Math.floor((data.value/count) * 100)) + "%";
+            return ((data.value/count) * 100).toFixed(1) + "%";
           });
 
       text.data(pie.value(function(g) { return d[g];})(groups)).transition()
