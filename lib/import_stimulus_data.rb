@@ -7,7 +7,7 @@ class ImportStimulus
     data = CSV.parse(file)
     data.each do |row|
       if row[0] != 'Project Name'
-        if Project.find_by(name: row[0]) == nil
+        if Project.find_by(name: row[0]) == nil && row[5].to_i != 0
           Project.create!(name: row[0], category: row[3], funding: row[5].to_i, status: row[10], percent_spent: row[11].to_f)
         end
       end
