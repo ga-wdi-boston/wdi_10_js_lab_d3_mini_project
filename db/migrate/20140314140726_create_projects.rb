@@ -3,7 +3,7 @@ class CreateProjects < ActiveRecord::Migration
     create_table :projects do |t|
       t.string :name
       t.string :category
-      t.integer :funding
+      t.integer :funding, :limit => 8
       t.string :status
       t.float :percent_spent
 

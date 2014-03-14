@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20140314140726) do
   create_table "projects", force: true do |t|
     t.string   "name"
     t.string   "category"
-    t.integer  "funding"
+    t.integer  "funding",       limit: 8
     t.string   "status"
     t.float    "percent_spent"
     t.datetime "created_at"
