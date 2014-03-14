@@ -11,3 +11,31 @@
  *= require_self
  *= require_tree .
  */
+
+polyline{
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.arc text{
+  font-size: 10px;
+}
+
+svg {
+  background-color: #ecf0f1;
+}
+
+
+ .axis text {
+  font: 10px sans-serif;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
