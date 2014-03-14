@@ -1,0 +1,9 @@
+  [1m[36m (34.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (8.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProjects (20140314140726)
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (25.7ms)[0m  [1mCREATE TABLE "projects" ("id" serial primary key, "name" character varying(255), "category" character varying(255), "funding" integer, "status" character varying(255), "percent_spent" float, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314140726"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
