@@ -2,20 +2,42 @@ require 'csv'
 
 
 class ImportWdi
-  def self.import
-    data = CSV.read("#{Rails.root}/data/small_set.csv")
+  def self.import_countries
+    data = CSV.read("#{Rails.root}/data/WDI_Country.csv")
+    data.each_with_index do |line, i|
+      if i != 0
+        Country.create!({
+          name: line[1],
+          code: line[0],
+          group: line[2],
+          region: line[3],
+          currency: line[6]
+          })
+        puts "#{line[1]} imported!"
+      end
+    end
+  end
+
+  def self.import_wdi
+    data = CSV.read("#{Rails.root}/data/WDI_Data.csv")
     array = []
     data.each_with_index do |line, i|
-      if i < 10
-        puts line.inspect
-        false
-      end
-      # line[0] = country
-      # line[1] = country_code
-      # line[2] = indicator_name
-      # line[3] = indicator_code
-      # line[4..57] dates between 1960 and current
+
 
     end
   end
 end
+
+
+# == Schema Information
+#
+# Table name: countries
+#
+#  id         :integer          not null, primary key
+#  name       :string(255)
+#  code       :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#  group      :string(255)
+#  region     :string(255)
+#  currency   :string(255)

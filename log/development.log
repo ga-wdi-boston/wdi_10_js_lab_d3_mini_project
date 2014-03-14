@@ -28,3 +28,760 @@ Migrating to AddColsToCountries (20140314153715)
   [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314153715"]]
   [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (8.8ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "ABW"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Aruban florin"], ["group", "High income: nonOECD"], ["name", "Aruba"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "ADO"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: nonOECD"], ["name", "Principality of Andorra"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "AFG"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Afghan afghani"], ["group", "Low income"], ["name", "Islamic State of Afghanistan"], ["region", "South Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "AGO"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Angolan kwanza"], ["group", "Upper middle income"], ["name", "People's Republic of Angola"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "ALB"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Albanian lek"], ["group", "Upper middle income"], ["name", "Republic of Albania"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "ARB"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Arab World"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "ARE"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "U.A.E. dirham"], ["group", "High income: nonOECD"], ["name", "United Arab Emirates"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "ARG"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Argentine peso"], ["group", "Upper middle income"], ["name", "Argentine Republic"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "ARM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Armenian dram"], ["group", "Lower middle income"], ["name", "Republic of Armenia"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "ASM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "U.S. dollar"], ["group", "Upper middle income"], ["name", "American Samoa"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "ATG"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "East Caribbean dollar"], ["group", "High income: nonOECD"], ["name", "Antigua and Barbuda"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "AUS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Australian dollar"], ["group", "High income: OECD"], ["name", "Commonwealth of Australia"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "AUT"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Republic of Austria"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "AZE"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "New Azeri manat"], ["group", "Upper middle income"], ["name", "Republic of Azerbaijan"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "BDI"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Burundi franc"], ["group", "Low income"], ["name", "Republic of Burundi"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "BEL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Kingdom of Belgium"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "BEN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Low income"], ["name", "Republic of Benin"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "BFA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Low income"], ["name", "Burkina Faso"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "BGD"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Bangladeshi taka"], ["group", "Low income"], ["name", "People's Republic of Bangladesh"], ["region", "South Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "BGR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Bulgarian lev"], ["group", "Upper middle income"], ["name", "Republic of Bulgaria"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "BHR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Bahraini dinar"], ["group", "High income: nonOECD"], ["name", "Kingdom of Bahrain"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "BHS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Bahamian dollar"], ["group", "High income: nonOECD"], ["name", "Commonwealth of The Bahamas"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "BIH"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Bosnia and Herzegovina convertible mark"], ["group", "Upper middle income"], ["name", "Bosnia and Herzegovina"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "BLR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Belarusian rubel"], ["group", "Upper middle income"], ["name", "Republic of Belarus"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "BLZ"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Belize dollar"], ["group", "Upper middle income"], ["name", "Belize"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "BMU"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Bermuda dollar"], ["group", "High income: nonOECD"], ["name", "The Bermudas"], ["region", "North America"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "BOL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Bolivian Boliviano"], ["group", "Lower middle income"], ["name", "Plurinational State of Bolivia"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "BRA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Brazilian real"], ["group", "Upper middle income"], ["name", "Federative Republic of Brazil"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "BRB"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Barbados dollar"], ["group", "High income: nonOECD"], ["name", "Barbados"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "BRN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Brunei dollar"], ["group", "High income: nonOECD"], ["name", "Brunei Darussalam"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "BTN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Bhutanese ngultrum"], ["group", "Lower middle income"], ["name", "Kingdom of Bhutan"], ["region", "South Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "BWA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Botswana pula"], ["group", "Upper middle income"], ["name", "Republic of Botswana"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "CAA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Sub-Saharan Africa (IFC classification)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "CAF"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Low income"], ["name", "Central African Republic"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "CAN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Canadian dollar"], ["group", "High income: OECD"], ["name", "Canada"], ["region", "North America"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "CEA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "East Asia and the Pacific (IFC classification)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "CEU"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Europe and Central Asia (IFC classification)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "CHE"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Swiss franc"], ["group", "High income: OECD"], ["name", "Switzerland"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "CHI"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Pound sterling"], ["group", "High income: nonOECD"], ["name", "Channel Islands"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "CHL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Chilean peso"], ["group", "High income: OECD"], ["name", "Republic of Chile"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "CHN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Chinese yuan"], ["group", "Upper middle income"], ["name", "People's Republic of China"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "CIV"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Lower middle income"], ["name", "Republic of CÙte d'Ivoire"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "CLA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Latin America and the Caribbean (IFC classification)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "CME"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Middle East and North Africa (IFC classification)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "CMR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Lower middle income"], ["name", "Republic of Cameroon"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "COG"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Lower middle income"], ["name", "Republic of Congo"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "COL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Colombian peso"], ["group", "Upper middle income"], ["name", "Republic of Colombia"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "COM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Comorian franc"], ["group", "Low income"], ["name", "Union of the Comoros"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "CPV"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Cape Verde escudo"], ["group", "Lower middle income"], ["name", "Republic of Cabo Verde"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "CRI"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Costa Rican colon"], ["group", "Upper middle income"], ["name", "Republic of Costa Rica"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "CSA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "South Asia (IFC classification)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "CSS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Caribbean small states"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "CUB"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Cuban peso"], ["group", "Upper middle income"], ["name", "Republic of Cuba"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "CUW"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Netherlands Antilles guilder"], ["group", "High income: nonOECD"], ["name", "CuraÁao"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "CYM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Cayman Islands dollar"], ["group", "High income: nonOECD"], ["name", "Cayman Islands"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "CYP"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: nonOECD"], ["name", "Republic of Cyprus"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "CZE"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Czech koruna"], ["group", "High income: OECD"], ["name", "Czech Republic"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "DEU"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Federal Republic of Germany"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "DJI"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Djibouti franc"], ["group", "Lower middle income"], ["name", "Republic of Djibouti"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "DMA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "East Caribbean dollar"], ["group", "Upper middle income"], ["name", "Commonwealth of Dominica"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "DNK"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Danish krone"], ["group", "High income: OECD"], ["name", "Kingdom of Denmark"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "DOM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Dominican peso"], ["group", "Upper middle income"], ["name", "Dominican Republic"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "DZA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Algerian dinar"], ["group", "Upper middle income"], ["name", "People's Democratic Republic of Algeria"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "EAP"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "East Asia & Pacific (developing only)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "EAS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "East Asia & Pacific (all income levels)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "ECA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Europe & Central Asia (developing only)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "ECS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Europe & Central Asia (all income levels)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "ECU"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "U.S. dollar"], ["group", "Upper middle income"], ["name", "Republic of Ecuador"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "EGY"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Egyptian pound"], ["group", "Lower middle income"], ["name", "Arab Republic of Egypt"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "EMU"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Euro area"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "ERI"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Eritrean nakfa"], ["group", "Low income"], ["name", "State of Eritrea"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "ESP"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Kingdom of Spain"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "EST"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Republic of Estonia"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "ETH"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Ethiopian birr"], ["group", "Low income"], ["name", "Federal Democratic Republic of Ethiopia"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "EUU"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "European Union"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "FIN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Republic of Finland"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "FJI"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Fijian dollar"], ["group", "Upper middle income"], ["name", "Republic of Fiji"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "FRA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "French Republic"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "FRO"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Danish krone"], ["group", "High income: nonOECD"], ["name", "Faeroe Islands"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "FSM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "U.S. dollar"], ["group", "Lower middle income"], ["name", "Federated States of Micronesia"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "GAB"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Upper middle income"], ["name", "Gabonese Republic"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "GBR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Pound sterling"], ["group", "High income: OECD"], ["name", "United Kingdom of Great Britain and Northern Ireland"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "GEO"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Georgian lari"], ["group", "Lower middle income"], ["name", "Georgia"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "GHA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "New Ghanaian cedi"], ["group", "Lower middle income"], ["name", "Republic of Ghana"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "GIN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Guinean franc"], ["group", "Low income"], ["name", "Republic of Guinea"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "GMB"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Gambian dalasi"], ["group", "Low income"], ["name", "Republic of The Gambia"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "GNB"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Low income"], ["name", "Republic of Guinea-Bissau"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "GNQ"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "High income: nonOECD"], ["name", "Republic of Equatorial Guinea"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "GRC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Hellenic Republic"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "GRD"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "East Caribbean dollar"], ["group", "Upper middle income"], ["name", "Grenada"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "GRL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Danish krone"], ["group", "High income: nonOECD"], ["name", "Greenland"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "GTM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Guatemalan quetzal"], ["group", "Lower middle income"], ["name", "Republic of Guatemala"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "GUM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "U.S. dollar"], ["group", "High income: nonOECD"], ["name", "Guam"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "GUY"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Guyana dollar"], ["group", "Lower middle income"], ["name", "Co-operative Republic of Guyana"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "HIC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "High income"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "HKG"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Hong Kong dollar"], ["group", "High income: nonOECD"], ["name", "Hong Kong Special Administrative Region of the People's Republic of China"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "HND"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Honduran lempira"], ["group", "Lower middle income"], ["name", "Republic of Honduras"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "HPC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Heavily indebted poor countries (HIPC)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "HRV"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Croatian kuna"], ["group", "High income: nonOECD"], ["name", "Republic of Croatia"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "HTI"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Haitian gourde"], ["group", "Low income"], ["name", "Republic of Haiti"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "HUN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Hungarian forint"], ["group", "Upper middle income"], ["name", "Hungary"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "IDN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Indonesian rupiah"], ["group", "Lower middle income"], ["name", "Republic of Indonesia"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "IMY"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Pound sterling"], ["group", "High income: nonOECD"], ["name", "Isle of Man"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "IND"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Indian rupee"], ["group", "Lower middle income"], ["name", "Republic of India"], ["region", "South Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "IRL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Ireland"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "IRN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Iranian rial"], ["group", "Upper middle income"], ["name", "Islamic Republic of Iran"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "IRQ"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Iraqi dinar"], ["group", "Upper middle income"], ["name", "Republic of Iraq"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "ISL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Iceland krona"], ["group", "High income: OECD"], ["name", "Republic of Iceland"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "ISR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Israeli new shekel"], ["group", "High income: OECD"], ["name", "State of Israel"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "ITA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Italian Republic"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "JAM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Jamaican dollar"], ["group", "Upper middle income"], ["name", "Jamaica"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "JOR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Jordanian dinar"], ["group", "Upper middle income"], ["name", "Hashemite Kingdom of Jordan"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "JPN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Japanese yen"], ["group", "High income: OECD"], ["name", "Japan"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "KAZ"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Kazakh tenge"], ["group", "Upper middle income"], ["name", "Republic of Kazakhstan"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "KEN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Kenyan shilling"], ["group", "Low income"], ["name", "Republic of Kenya"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "KGZ"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Kyrgyz som"], ["group", "Low income"], ["name", "Kyrgyz Republic"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "KHM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Cambodian riel"], ["group", "Low income"], ["name", "Kingdom of Cambodia"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "KIR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Australian dollar"], ["group", "Lower middle income"], ["name", "Republic of Kiribati"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "KNA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "East Caribbean dollar"], ["group", "High income: nonOECD"], ["name", "St. Kitts and Nevis"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "KOR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Korean won"], ["group", "High income: OECD"], ["name", "Republic of Korea"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "KSV"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "Lower middle income"], ["name", "Republic of Kosovo"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "KWT"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Kuwaiti dinar"], ["group", "High income: nonOECD"], ["name", "State of Kuwait"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "LAC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Latin America & Caribbean (developing only)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "LAO"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Lao kip"], ["group", "Lower middle income"], ["name", "Lao People's Democratic Republic"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "LBN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Lebanese pound"], ["group", "Upper middle income"], ["name", "Lebanese Republic"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "LBR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Liberian dollar"], ["group", "Low income"], ["name", "Republic of Liberia"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "LBY"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Libyan dinar"], ["group", "Upper middle income"], ["name", "Socialist People's Libyan Arab Jamahiriya"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "LCA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "East Caribbean dollar"], ["group", "Upper middle income"], ["name", "St. Lucia"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "LCN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Latin America & Caribbean (all income levels)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "LDC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Least developed countries: UN classification"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "LIC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Low income"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "LIE"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Swiss franc"], ["group", "High income: nonOECD"], ["name", "Principality of Liechtenstein"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "LKA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Sri Lankan rupee"], ["group", "Lower middle income"], ["name", "Democratic Socialist Republic of Sri Lanka"], ["region", "South Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "LMC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Lower middle income"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "LMY"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Low & middle income"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "LSO"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Lesotho loti"], ["group", "Lower middle income"], ["name", "Kingdom of Lesotho"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "LTU"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Lithuanian litas"], ["group", "High income: nonOECD"], ["name", "Republic of Lithuania"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "LUX"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Grand Duchy of Luxembourg"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "LVA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Latvian lats"], ["group", "High income: nonOECD"], ["name", "Republic of Latvia"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "MAC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Macao pataca"], ["group", "High income: nonOECD"], ["name", "Macao Special Administrative Region of the People's Republic of China"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "MAF"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: nonOECD"], ["name", "St. Martin (French part)"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "March"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Moroccan dirham"], ["group", "Lower middle income"], ["name", "Kingdom of Morocco"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "MCO"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: nonOECD"], ["name", "Principality of Monaco"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "MDA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Moldovan leu"], ["group", "Lower middle income"], ["name", "Republic of Moldova"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "MDG"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Malagasy ariary"], ["group", "Low income"], ["name", "Republic of Madagascar"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "MDV"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Maldivian rufiyaa"], ["group", "Upper middle income"], ["name", "Republic of Maldives"], ["region", "South Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "MEA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Middle East & North Africa (all income levels)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "MEX"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Mexican peso"], ["group", "Upper middle income"], ["name", "United Mexican States"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "MHL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "U.S. dollar"], ["group", "Upper middle income"], ["name", "Republic of the Marshall Islands"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "MIC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Middle income"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "MKD"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Macedonian denar"], ["group", "Upper middle income"], ["name", "Former Yugoslav Republic of Macedonia"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "MLI"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Low income"], ["name", "Republic of Mali"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "MLT"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: nonOECD"], ["name", "Republic of Malta"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "MMR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Myanmar kyat"], ["group", "Low income"], ["name", "Republic of the Union of Myanmar"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "MNA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Middle East & North Africa (developing only)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "MNE"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "Upper middle income"], ["name", "Montenegro"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "MNG"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Mongolian tugrik"], ["group", "Lower middle income"], ["name", "Mongolia"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "MNP"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "U.S. dollar"], ["group", "High income: nonOECD"], ["name", "Commonwealth of the Northern Mariana Islands"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "MOZ"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "New Mozambican metical"], ["group", "Low income"], ["name", "Republic of Mozambique"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "MRT"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Mauritanian ouguiya"], ["group", "Lower middle income"], ["name", "Islamic Republic of Mauritania"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "MUS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Mauritian rupee"], ["group", "Upper middle income"], ["name", "Republic of Mauritius"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "MWI"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Malawi kwacha"], ["group", "Low income"], ["name", "Republic of Malawi"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "MYS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Malaysian ringgit"], ["group", "Upper middle income"], ["name", "Malaysia"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "NAC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "North America"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "NAM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Namibian dollar"], ["group", "Upper middle income"], ["name", "Republic of Namibia"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "NCL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFP franc"], ["group", "High income: nonOECD"], ["name", "New Caledonia"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "NER"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Low income"], ["name", "Republic of Niger"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "NGA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Nigerian naira"], ["group", "Lower middle income"], ["name", "Federal Republic of Nigeria"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "NIC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Nicaraguan gold cordoba"], ["group", "Lower middle income"], ["name", "Republic of Nicaragua"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "NLD"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Kingdom of the Netherlands"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "NOC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "High income: nonOECD"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "NOR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Norwegian krone"], ["group", "High income: OECD"], ["name", "Kingdom of Norway"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "NPL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Nepalese rupee"], ["group", "Low income"], ["name", "Nepal"], ["region", "South Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "NZL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "New Zealand dollar"], ["group", "High income: OECD"], ["name", "New Zealand"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "OEC"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "High income: OECD"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "OED"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "OECD members"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "OMN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Rial Omani"], ["group", "High income: nonOECD"], ["name", "Sultanate of Oman"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "OSS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Other small states"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "PAK"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Pakistani rupee"], ["group", "Lower middle income"], ["name", "Islamic Republic of Pakistan"], ["region", "South Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "PAN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Panamanian balboa"], ["group", "Upper middle income"], ["name", "Republic of Panama"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "PER"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Peruvian new sol"], ["group", "Upper middle income"], ["name", "Republic of Peru"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "PHL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Philippine peso"], ["group", "Lower middle income"], ["name", "Republic of the Philippines"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "PLW"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "U.S. dollar"], ["group", "Upper middle income"], ["name", "Republic of Palau"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "PNG"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Papua New Guinea kina"], ["group", "Lower middle income"], ["name", "The Independent State of Papua New Guinea"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "POL"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Polish zloty"], ["group", "High income: OECD"], ["name", "Republic of Poland"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "PRI"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "U.S. dollar"], ["group", "High income: nonOECD"], ["name", "Puerto Rico"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "PRK"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Democratic People's Republic of Korean won"], ["group", "Low income"], ["name", "Democratic People's Republic of Korea"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "PRT"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Portuguese Republic"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "PRY"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Paraguayan guarani"], ["group", "Lower middle income"], ["name", "Republic of Paraguay"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "PSS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Pacific island small states"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "PYF"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFP franc"], ["group", "High income: nonOECD"], ["name", "French Polynesia"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "QAT"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Qatari riyal"], ["group", "High income: nonOECD"], ["name", "State of Qatar"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "ROM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "New Romanian leu"], ["group", "Upper middle income"], ["name", "Romania"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "RUS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Russian ruble"], ["group", "High income: nonOECD"], ["name", "Russian Federation"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "RWA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Rwandan franc"], ["group", "Low income"], ["name", "Republic of Rwanda"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "SAS"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "South Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "SAU"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Saudi Arabian riyal"], ["group", "High income: nonOECD"], ["name", "Kingdom of Saudi Arabia"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "SDN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Sudanese pound"], ["group", "Lower middle income"], ["name", "Republic of the Sudan"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "SEN"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "CFA franc"], ["group", "Lower middle income"], ["name", "Republic of Senegal"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "SGP"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Singapore dollar"], ["group", "High income: nonOECD"], ["name", "Republic of Singapore"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "SLB"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Solomon Islands dollar"], ["group", "Lower middle income"], ["name", "Solomon Islands"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "SLE"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Sierra Leonean leone"], ["group", "Low income"], ["name", "Republic of Sierra Leone"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "SLV"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "U.S. dollar"], ["group", "Lower middle income"], ["name", "Republic of El Salvador"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "SMR"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Euro"], ["group", "High income: nonOECD"], ["name", "Republic of San Marino"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "SOM"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "Somali shilling"], ["group", "Low income"], ["name", "Somali Democratic Republic"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "SRB"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["currency", "New Serbian dinar"], ["group", "Upper middle income"], ["name", "Republic of Serbia"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "SSA"], ["created_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00], ["name", "Sub-Saharan Africa (developing only)"], ["updated_at", Fri, 14 Mar 2014 16:12:11 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "SSD"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "South Sudanese Pound"], ["group", "Low income"], ["name", "Republic of South Sudan"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "SSF"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["name", "Sub-Saharan Africa (all income levels)"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["code", "SST"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["name", "Small states"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "STP"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "S„o TomÈ and Principe dobra"], ["group", "Lower middle income"], ["name", "Democratic Republic of S„o TomÈ and Principe"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "SUR"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Suriname dollar"], ["group", "Upper middle income"], ["name", "Republic of Suriname"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "SVK"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Slovak Republic"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "SVN"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Euro"], ["group", "High income: OECD"], ["name", "Republic of Slovenia"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "SWE"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Swedish krona"], ["group", "High income: OECD"], ["name", "Kingdom of Sweden"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "SWZ"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Swaziland lilangeni"], ["group", "Lower middle income"], ["name", "Kingdom of Swaziland"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "SXM"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Netherlands Antilles guilder"], ["group", "High income: nonOECD"], ["name", "Sint Maarten (Dutch part)"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "SYC"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Seychelles rupee"], ["group", "Upper middle income"], ["name", "Republic of Seychelles"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "SYR"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Syrian pound"], ["group", "Lower middle income"], ["name", "Syrian Arab Republic"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "TCA"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "U.S. dollar"], ["group", "High income: nonOECD"], ["name", "Turks and Caicos Islands"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "TCD"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "CFA franc"], ["group", "Low income"], ["name", "Republic of Chad"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "TGO"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "CFA franc"], ["group", "Low income"], ["name", "Republic of Togo"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "THA"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Thai baht"], ["group", "Upper middle income"], ["name", "Kingdom of Thailand"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "TJK"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Tajik somoni"], ["group", "Low income"], ["name", "Republic of Tajikistan"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "TKM"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "New Turkmen manat"], ["group", "Upper middle income"], ["name", "Turkmenistan"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "TMP"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "U.S. dollar"], ["group", "Lower middle income"], ["name", "Democratic Republic of Timor-Leste"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "TON"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Tongan pa'anga"], ["group", "Upper middle income"], ["name", "Kingdom of Tonga"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "TTO"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Trinidad and Tobago dollar"], ["group", "High income: nonOECD"], ["name", "Republic of Trinidad and Tobago"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "TUN"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Tunisian dinar"], ["group", "Upper middle income"], ["name", "Republic of Tunisia"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "TUR"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "New Turkish lira"], ["group", "Upper middle income"], ["name", "Republic of Turkey"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "TUV"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Australian dollar"], ["group", "Upper middle income"], ["name", "Tuvalu"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "TZA"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Tanzanian shilling"], ["group", "Low income"], ["name", "United Republic of Tanzania"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "UGA"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Ugandan shilling"], ["group", "Low income"], ["name", "Republic of Uganda"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "UKR"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Ukrainian hryvnia"], ["group", "Lower middle income"], ["name", "Ukraine"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "UMC"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["name", "Upper middle income"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "URY"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Uruguayan peso"], ["group", "High income: nonOECD"], ["name", "Oriental Republic of Uruguay"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "USA"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "U.S. dollar"], ["group", "High income: OECD"], ["name", "United States of America"], ["region", "North America"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "UZB"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Uzbek sum"], ["group", "Lower middle income"], ["name", "Republic of Uzbekistan"], ["region", "Europe & Central Asia"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "VCT"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "East Caribbean dollar"], ["group", "Upper middle income"], ["name", "St. Vincent and the Grenadines"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "VEN"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Venezuelan bolivar fuerte"], ["group", "Upper middle income"], ["name", "Rep˙blica Bolivariana de Venezuela"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "VIR"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "U.S. dollar"], ["group", "High income: nonOECD"], ["name", "Virgin Islands of the United States"], ["region", "Latin America & Caribbean"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "VNM"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Vietnamese dong"], ["group", "Lower middle income"], ["name", "Socialist Republic of Vietnam"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "VUT"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Vanuatu vatu"], ["group", "Lower middle income"], ["name", "Republic of Vanuatu"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "WBG"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Israeli new shekel"], ["group", "Lower middle income"], ["name", "West Bank and Gaza"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["code", "WLD"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["name", "World"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "WSM"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Samoan tala"], ["group", "Lower middle income"], ["name", "Samoa"], ["region", "East Asia & Pacific"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "YEM"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Yemeni rial"], ["group", "Lower middle income"], ["name", "Republic of Yemen"], ["region", "Middle East & North Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "ZAF"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "South African rand"], ["group", "Upper middle income"], ["name", "Republic of South Africa"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "ZAR"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Congolese franc"], ["group", "Low income"], ["name", "Democratic Republic of the Congo"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["code", "ZMB"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "Zambian kwacha [Note: On January 1, 2013 the new Zambian kwacha was introduced at a rate of 1000 old kwacha = 1 new kwacha. The local currency unit in this database remains the old kwacha. The revision will be introduced in a later version.]"], ["group", "Lower middle income"], ["name", "Republic of Zambia"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("code", "created_at", "currency", "group", "name", "region", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["code", "ZWE"], ["created_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00], ["currency", "U.S. dollar"], ["group", "Low income"], ["name", "Republic of Zimbabwe"], ["region", "Sub-Saharan Africa"], ["updated_at", Fri, 14 Mar 2014 16:12:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mCountry Load (2.8ms)[0m  [1mSELECT "countries".* FROM "countries"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "countries"
+  [1m[36mSQL (4.3ms)[0m  [1mDELETE FROM "countries"[0m
+  [1m[36mCountry Load (2.9ms)[0m  [1mSELECT "countries".* FROM "countries"[0m
