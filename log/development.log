@@ -1,0 +1,49 @@
+  [1m[36m (4.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTown (20140314143820)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (6.9ms)[0m  [1mCREATE TABLE "towns" ("id" serial primary key, "name" character varying(255), "state" character varying(255), "latitude" float, "longitude" float) [0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314143820"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "towns"[0m
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (27.0ms)[0m  INSERT INTO "towns" ("latitude", "longitude", "name", "state") VALUES ($1, $2, $3, $4) RETURNING "id"  [["latitude", 0.0], ["longitude", 0.0], ["name", " ShortName(City)"], ["state", "ISO31662A2(State)"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "towns" ("latitude", "longitude", "name", "state") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["latitude", 33.091627], ["longitude", -85.527029], ["name", "Abanda"], ["state", "AL"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "towns" ("latitude", "longitude", "name", "state") VALUES ($1, $2, $3, $4) RETURNING "id"  [["latitude", 31.564689], ["longitude", -85.259124], ["name", "Abbeville"], ["state", "AL"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "towns" ("latitude", "longitude", "name", "state") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["latitude", 33.60575], ["longitude", -86.97465], ["name", "Adamsville"], ["state", "AL"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "towns" ("latitude", "longitude", "name", "state") VALUES ($1, $2, $3, $4) RETURNING "id"  [["latitude", 34.202681], ["longitude", -87.178004], ["name", "Addison"], ["state", "AL"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "towns" ("latitude", "longitude", "name", "state") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["latitude", 32.879495], ["longitude", -87.741679], ["name", "Akron"], ["state", "AL"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mTown Load (2.2ms)[0m  [1mSELECT "towns".* FROM "towns"[0m
+  [1m[35mTown Load (0.6ms)[0m  SELECT "towns".* FROM "towns"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.7ms)[0m  DELETE FROM "towns" WHERE "towns"."id" = $1  [["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "towns" WHERE "towns"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "towns" WHERE "towns"."id" = $1  [["id", 3]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "towns" WHERE "towns"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "towns" WHERE "towns"."id" = $1  [["id", 5]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "towns" WHERE "towns"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "towns"[0m
