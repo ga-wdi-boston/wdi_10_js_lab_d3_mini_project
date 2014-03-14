@@ -26,7 +26,7 @@ class ImportEmployees
     #   Employee.create!(
     #     name: employee[8].to_s,
     #     department: employee[10].to_s,
-    #     total_salary: employee[6].to_i,
+    #     total_salary: employee[18].to_i,
     #     regular_pay: employee[11].to_i,
     #     overtime_pay: employee[14].to_i,
     #     injury_pay: employee[15].to_i,
@@ -41,7 +41,7 @@ class ImportEmployees
       # escape the fucking apostrophes
       name = employee[8].gsub(/'/,"''").gsub(/,/,', ').strip.to_s
       department = employee[10].strip.gsub(/'/,"''").to_s
-      total_salary = employee[6].strip.to_i
+      total_salary = employee[18].strip.to_i
       regular_pay = employee[11].strip.to_i
       overtime_pay = employee[14].strip.to_i
       injury_pay = employee[15].strip.to_i
