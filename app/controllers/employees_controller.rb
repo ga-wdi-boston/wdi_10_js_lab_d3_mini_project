@@ -1,6 +1,6 @@
 class EmployeesController < ApplicationController
   def index
-    employees = Employee.all
-
+    @employees = Employee.where(department: "Boston Public Library")
+    render json: @employees, root: false
   end
 end
