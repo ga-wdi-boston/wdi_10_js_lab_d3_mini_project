@@ -1,9 +1,7 @@
 class TownsController < ApplicationController
   def index
-    # SELECT DISTINCT(name), COUNT(name) FROM towns GROUP BY name;
-    # SELECT name, count(state) FROM towns GROUP BY name HAVING COUNT(*) > 1 ORDER BY count(state) DESC;
-    binding.pry
-    towns = Town.all.limit(1)
+    towns = Town.select("name, count(state) as reps").group("name").having("COUNT(*) > 1").order("count(state) DESC")
+
     respond_to do |format|
       format.html
       format.json {render json: towns, root: false }
@@ -11,6 +9,11 @@ class TownsController < ApplicationController
   end
 end
 
-Town.select("name, count(state) as rep").group("name").having("COUNT(*) > 1").order("count(state) DESC")
 
 
+# NOTES ON Queries
+# Town.select("name, count(state) as rep").group("name").having("COUNT(*) > 1").order("count(state) DESC")
+# Town.where(name: "Franklin").pluck(:state)
+
+# SELECT DISTINCT(name), COUNT(name) FROM towns GROUP BY name;
+# SELECT name, count(state) as reps FROM towns GROUP BY name HAVING COUNT(*) > 1 ORDER BY count(state) DESC;
