@@ -1,96 +1,67 @@
-window.onload = function(){
-  // d3VisualizerFunct();
-  Bubbles();
-  chart();
-
+window.onload = function() {
+  TownBubbes();
 };
 
-var Bubbles,
-    chart
-    rValue,
-    idValue,
-    rScale
-    textValue,
-    collisionPadding,
-    minCollisionRadius,
-    jitter,
-    chart;
+var bubble = d3.layout.pack()
+    .sort(null)
+    .size([diameter, diameter])
+    .padding(1.5);
 
-//set up the bubble properties
-Bubbles = function() {
-  var data, height, label, margin, maxRadius, node, width;
-  width = 980;
-  height = 510;
-  data = [];
-  node = null;
-  label = null;
-  maxRadius = 65;
-  margin = {
-    top: 5,
-    right: 0,
-    bottom: 0,
-    left: 0
-  };
-};
-// to scale the bubble
-rScale = function(){
-  d3.scale.sqrt().range([0,maxRadius]);
-};
-// to size the bubble
-rValue = function(d) {
-  return parseInt(d.repetition * 10);
-};
-// to set id
-idValue = function(d) {
-  return d.name + "_" + d.repetition;
-};
-// to set the text
-textValue = function(d) {
-  return d.name;
-};
+var diameter = 5000,
+    color = d3.scale.category20c();
 
-chart = function() {
-  d3.json('/towns/index.json', function(error, data){
-    var town_data, label, maxDomainValue, node, svg, svgEnter, rScale_val, rValue_val;
-    town_data = data;
-    maxDomainValue = d3.max(town_data, function(d) {
-      return rValue_val = rValue(d);
-    });
-    rScale_val = rScale();
-    rScale.domain([0, maxDomainValue]);
-    svg = d3.select(this).selectAll("svg").data(town_data);
-    svgEnter = svg.enter().append("svg");
-    svg.attr("width", width + margin.left + margin.right);
-    svg.attr("height", height + margin.top + margin.bottom);
-    node = svgEnter.append("g")
-                   .attr("id", "bubble-nodes")
-                   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+TownBubbes = function() {
+  d3.json('/towns/index.json', function(error, towns){
+    var spead = d3.layout.pack();
+    var color = d3.scale.category20c();
+    var townsViz = d3.select("#towns-container")
+                    .attr("width", diameter)
+                    .attr("height", diameter)
+                    .attr("class", "bubble")
+                    .selectAll("g")
+                    .data(towns)
+                    .enter()
+                    .append("g")
+                    .attr("transform", function(town){
+                      var val, translate;
+                      val = town.name.length * 10;
+                      translate = "translate(" + (Math.floor(Math.random()*5000))  + "," +  (Math.floor(Math.random()*5000)) +  ")";
+                      return translate
+                    })
+                    .attr("class", "node");
 
-    node.append("rect")
-        .attr("id", "bubble-background")
-        .attr("width", width)
-        .attr("height", height)
-        .on("click", clear);
+        townsViz.append('circle')
+                 .attr('r', function(town){return town.repetition * 5;})
+                 .style("fill", function(town) { return color(town.name); })
+                 .attr('id', function(town, i ){return i;});
 
-    label = d3.select(this)
-              .selectAll("#bubble-labels")
-              .data([town_data])
-              .enter()
-                .append("text")
-                .attr("id", "bubble-labels")
-                .text(textValue(d));
+        townsViz.append('text')
+                 .text(function(town){return town.name;})
+                 .style("text-anchor", "middle");
+
+        townsViz.append('text')
+                 .text(function(town){return " count:" + parseInt(town.repetition);})
+                 .style("text-anchor", "middle")
+                 .attr("transform", function(town){
+                      translate = "translate(" + 8  + "," +  15 +  ")";
+                      return translate
+                    });
   });
 };
 
-// var d3VisualizerFunct = function(){
-//   d3.json('/towns/index.json', function(error, towns){
-//   var town_viz;
-//   debugger;
-//   town_viz = d3.select("#towns-container")
-//                .selectAll("g")
-//                .data(towns)
-//                .enter()
-//                 .append("g")
-//                 .attr("class", "node");
-//   });
-// };
+
+function classes(root) {
+  var classes = [];
+
+  function recurse(name, node) {
+    if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
+    else classes.push({packageName: name, className: node.name, value: node.size});
+  }
+
+  recurse(null, root);
+  return {children: classes};
+}
+
+
+
+
