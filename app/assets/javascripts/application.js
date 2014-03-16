@@ -19,5 +19,5 @@ var DataApp = DataApp || {};
 
 $(function () {
   // Draw initial graph and set event listener
-  DataApp.init.apply(DataApp);
+  DataApp.init();
 });

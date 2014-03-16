@@ -1,6 +1,9 @@
-<div id="container"></div>
-<ul class="countries_list">
-  <% @countries.each do |country| %>
-    <%= content_tag(:li, country.name, data: country.id) %>
-  <% end %>
-</ul>
+<div id="container">
+  <h1 class="title"><span>World</span> Indicators</h1>
+  <svg></svg>
+  <ul class="countries_list">
+    <% @countries.each do |country| %>
+      <%= content_tag(:li, country.name, data: country.id) %>
+    <% end %>
+  </ul>
+</div>

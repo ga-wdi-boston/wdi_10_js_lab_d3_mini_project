@@ -21,7 +21,7 @@ DataApp.getData = function (url, callback) {
 
   var success = function (error, data) {
     var map = d3.map(data.years);
-
+    $('h1.title span').html(data.name)
     map.forEach(function (index, d) {
       // organize data
       switch (d.indicator.code) {
@@ -66,12 +66,12 @@ DataApp.getData = function (url, callback) {
   d3.json(url, success);
 };
 
-DataApp.redrawLines = function (event) {
+DataApp.redrawLines = function () {
   // set the min and max values for the scale domains
   DataApp.x.domain(d3.extent(DataApp.itCellP2, function(d) { return d.year; }));
   DataApp.y.domain(d3.extent(DataApp.itCellP2, function(d) { return d.value; }));
 
-  // Update the valueline path of lines
+  // Update the valueline for lines with new data
   DataApp.svg.selectAll('path.line')
     .transition()
       .duration(1000)
@@ -97,15 +97,20 @@ DataApp.redrawLines = function (event) {
 };
 
 DataApp.drawLines = function () {
-  DataApp.margin = {top: 20, right: 20, bottom: 30, left: 50};
-  DataApp.width = 960 - DataApp.margin.left - DataApp.margin.right;
-  DataApp.height = 500 - DataApp.margin.top - DataApp.margin.bottom;
+  var legend = [
+    {name: "Internet Users Per 100 People", code: "line"},
+    {name: "Broadband Subscribers Per 100 People", code: "broad"},
+    {name: "Mobile Subscribers Per 100 People", code: "cell"}
+    ],
+    margin = {top: 20, right: 20, bottom: 100, left: 50},
+    width = 960 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
   // Define scales
   DataApp.x = d3.scale.linear()
-      .range([0, DataApp.width]);
+      .range([0, width]);
 
   DataApp.y = d3.scale.linear()
-      .range([DataApp.height, 0]);
+      .range([height, 0]);
 
   // Set up generators
   DataApp.xAxis = d3.svg.axis()
@@ -121,11 +126,11 @@ DataApp.drawLines = function () {
       .y(function (d) { return DataApp.y([d.value]); });
 
   // setup svg
-  DataApp.svg = d3.select("#container").append("svg")
-      .attr("width", DataApp.width + DataApp.margin.left + DataApp.margin.right)
-      .attr("height", DataApp.height + DataApp.margin.top + DataApp.margin.bottom)
+  DataApp.svg = d3.select("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
     .append('g')
-      .attr("transform", "translate(" + DataApp.margin.left + "," + DataApp.margin.top + ")");
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   // set the min and max values for the scale domains
   DataApp.x.domain(d3.extent(DataApp.itCellP2, function(d) { return d.year; }));
@@ -134,7 +139,7 @@ DataApp.drawLines = function () {
   // call axis generators and append
   DataApp.svg.append("g")
       .attr("class", "x axis")
-      .attr("transform", "translate(0, " + DataApp.height + ")")
+      .attr("transform", "translate(0, " + height + ")")
       .call(DataApp.xAxis);
   DataApp.svg.append("g")
       .attr("class", "y axis")
@@ -146,6 +151,7 @@ DataApp.drawLines = function () {
       .style("text-anchor", "end")
       .text("Percentage (%)");
 
+  // append line graphs
   DataApp.svg.append("path")
       .datum(DataApp.itUsersP2)
       .attr("class", "line")
@@ -166,4 +172,16 @@ DataApp.drawLines = function () {
       .attr("d", DataApp.line)
       .transition()
       .duration(500);
+
+  // append legend
+  DataApp.svg.append("g")
+      .attr("transform", "translate(0," + (height + 50) + ")")
+      .selectAll("text")
+      .data(legend)
+    .enter()
+    .append("text")
+      .attr("class", function (d) { return d.code; })
+      .attr("x", function (d, i) { return i * 300})
+      .attr("y", 10)
+      .text(function (d) { return d.name; });
 }

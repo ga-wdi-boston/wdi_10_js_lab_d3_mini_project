@@ -33,6 +33,11 @@
    stroke: steelblue;
    stroke-width: 1.5px;
  }
+ text.line {
+  fill: steelblue;
+  stroke: none;
+  font-size: 14px;
+ }
 
  .cell {
   fill: none;
@@ -40,8 +45,37 @@
   stroke-width: 1.5px;
  }
 
+ text.cell {
+  fill: black;
+  stroke: none;
+  font-size: 14px;
+ }
+
  .broad {
   fill: none;
   stroke: tomato;
   stroke-width: 1.5px;
  }
+
+ text.broad {
+  fill: tomato;
+  stroke: none;
+  font-size: 14px;
+ }
+
+ .countries_list {
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+ }
+
+ .countries_list li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+ }
+
+ svg {
+  position: absolute;
+ }
+
+ h1.title { margin-left: 400px; }
