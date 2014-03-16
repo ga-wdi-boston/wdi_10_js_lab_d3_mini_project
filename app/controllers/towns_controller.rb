@@ -1,10 +1,9 @@
 class TownsController < ApplicationController
   def index
-    towns = Town.select("name, count(state) as reps").group("name").having("COUNT(*) > 1").order("count(state) DESC")
-
+    @towns = Town.select("name, count(state) as reps").group("name").having("COUNT(*) > 1").order("count(state) DESC")
     respond_to do |format|
       format.html
-      format.json {render json: towns, root: false }
+      format.json {render json: @towns, root: false }
     end
   end
 end
