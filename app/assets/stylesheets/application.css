@@ -11,3 +11,37 @@
  *= require_self
  *= require_tree .
  */
+
+
+ body {
+   font: 10px sans-serif;
+ }
+
+ .axis path,
+ .axis line {
+   fill: none;
+   stroke: #000;
+   shape-rendering: crispEdges;
+ }
+
+ .x.axis path {
+   display: none;
+ }
+
+ .line {
+   fill: none;
+   stroke: steelblue;
+   stroke-width: 1.5px;
+ }
+
+ .cell {
+  fill: none;
+  stroke: black;
+  stroke-width: 1.5px;
+ }
+
+ .broad {
+  fill: none;
+  stroke: tomato;
+  stroke-width: 1.5px;
+ }

@@ -1,1 +1,6 @@
 <div id="container"></div>
+<ul class="countries_list">
+  <% @countries.each do |country| %>
+    <%= content_tag(:li, country.name, data: country.id) %>
+  <% end %>
+</ul>

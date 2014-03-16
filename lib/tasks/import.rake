@@ -21,7 +21,6 @@ namespace :import do
 
   desc "delete all wdi data from db"
   task delete_wdi_data: :environment do
-    Indicator.delete_all
     Year.delete_all
   end
 end

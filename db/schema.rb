@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140314153715) do
+ActiveRecord::Schema.define(version: 20140314214051) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20140314153715) do
   create_table "years", force: true do |t|
     t.integer  "country_id"
     t.integer  "indicator_id"
-    t.decimal  "value"
+    t.float    "value"
     t.integer  "name"
     t.datetime "created_at"
     t.datetime "updated_at"

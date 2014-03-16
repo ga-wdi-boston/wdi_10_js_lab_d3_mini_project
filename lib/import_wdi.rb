@@ -20,7 +20,7 @@ class ImportWdi
 
   def self.import_wdi
     data = CSV.read("#{Rails.root}/data/WDI_Data.csv")
-    years = [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]
+    years = [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012]
     indicators = ["SP.POP.TOTL", "IT.NET.USER.P2","IT.NET.BBND", "IT.NET.BBND.P2", "IT.CEL.SETS", "IT.CEL.SETS.P2"]
 
     data.each_with_index do |line, i|
@@ -36,7 +36,7 @@ class ImportWdi
               country: country,
               indicator: indicator,
               name: year,
-              value: line[i + 4]
+              value: line[i + 35].to_f
               })
           end
           puts "#{indicator.name} imported for #{country.name}."

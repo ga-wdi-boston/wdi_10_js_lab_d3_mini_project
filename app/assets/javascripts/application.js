@@ -12,4 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require d3
 //= require_tree .
+
+var DataApp = DataApp || {};
+
+$(function () {
+  // Draw initial graph and set event listener
+  DataApp.init.apply(DataApp);
+});
