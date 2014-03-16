@@ -1,67 +1,70 @@
-window.onload = function() {
-  TownBubbes();
-};
+
+var diameter = 5000;
 
 var bubble = d3.layout.pack()
     .sort(null)
     .size([diameter, diameter])
     .padding(1.5);
 
-var diameter = 5000,
-    color = d3.scale.category20c();
+var jsonData;
+
+$.getJSON('/towns/index.json').then(function(results){
+  jsonData = results;
+});
 
 TownBubbes = function() {
   d3.json('/towns/index.json', function(error, towns){
-    var spead = d3.layout.pack();
-    var color = d3.scale.category20c();
-    var townsViz = d3.select("#towns-container")
+    var color = d3.scale.category20();
+    var node = d3.select("#towns-container")
                     .attr("width", diameter)
                     .attr("height", diameter)
                     .attr("class", "bubble")
                     .selectAll("g")
-                    .data(towns)
+                    .data(bubble.nodes(transformData(towns)).filter(function(town){
+                      return !town.children;
+                    }))
                     .enter()
                     .append("g")
                     .attr("transform", function(town){
                       var val, translate;
                       val = town.name.length * 10;
-                      translate = "translate(" + (Math.floor(Math.random()*5000))  + "," +  (Math.floor(Math.random()*5000)) +  ")";
+                      translate = "translate(" + town.x  + "," +  town.y +  ")";
                       return translate
                     })
                     .attr("class", "node");
 
-        townsViz.append('circle')
-                 .attr('r', function(town){return town.repetition * 5;})
-                 .style("fill", function(town) { return color(town.name); })
-                 .attr('id', function(town, i ){return i;});
+        node.append('circle')
+                 .attr('r', function(d){
+                    return d.r;
+                  })
+                 .style("fill", function(town) {
+                    return color(town.value);
+                  })
+                 .attr('id', function(town, i ){
+                    return i;
+                  });
 
-        townsViz.append('text')
+        node.append('text')
                  .text(function(town){return town.name;})
                  .style("text-anchor", "middle");
 
-        townsViz.append('text')
-                 .text(function(town){return " count:" + parseInt(town.repetition);})
+        node.append('text')
+                 .text(function(town){return parseInt(town.value);})
                  .style("text-anchor", "middle")
                  .attr("transform", function(town){
-                      translate = "translate(" + 8  + "," +  15 +  ")";
+                      translate = "translate(" + 0  + "," +  15 +  ")";
                       return translate
                     });
   });
 };
 
-
-function classes(root) {
-  var classes = [];
-
-  function recurse(name, node) {
-    if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
-    else classes.push({packageName: name, className: node.name, value: node.size});
-  }
-
-  recurse(null, root);
-  return {children: classes};
+function transformData(json) {
+  var data = json.towns;
+  new_data = { children: data };
+  return new_data;
 }
 
+TownBubbes();
 
 
 

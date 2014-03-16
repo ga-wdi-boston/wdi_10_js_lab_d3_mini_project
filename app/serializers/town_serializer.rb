@@ -1,19 +1,19 @@
 class TownSerializer < ActiveModel::Serializer
-  attributes :name, :repetition, :state_name
+  attributes :name, :value,
 
-  def state_name
-    if defined? object.state = nil
-      state_name = "not available"
-    else
-      state_name = "#{object.state}"
-    end
-  end
+  # def state_name
+  #   if defined? object.state = nil
+  #     state_name = "not available"
+  #   else
+  #     state_name = "#{object.state}"
+  #   end
+  # end
 
-  def repetition
+  def value
     if defined? object.reps = nil
-      repetition = 1
+      value = 1
     else
-      repetition = "#{object.reps}"
+      value = "#{object.reps}"
     end
   end
 end

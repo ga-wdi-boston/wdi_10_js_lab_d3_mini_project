@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>D3Visualizer</title>
+  <title>D3Visualizer of Town Names</title>
   <%= stylesheet_link_tag    "application", media: "all" %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
 
+<!-- this is supposed to be a best practice - and is meant to be better for cross borwser uniformity -->
+<%= javascript_include_tag "application" %>
 </body>
 </html>
