@@ -1,7 +1,10 @@
-<div id="container">
+<div class="chart">
   <h1 class="title"><span>World</span> Indicators</h1>
   <svg></svg>
-  <ul class="countries_list">
+</div>
+<div class="countries_list">
+  <h1>Countries</h1>
+  <ul>
     <% @countries.each do |country| %>
       <%= content_tag(:li, country.name, data: country.id) %>
     <% end %>

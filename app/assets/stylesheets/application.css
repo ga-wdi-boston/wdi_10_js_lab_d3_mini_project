@@ -14,7 +14,7 @@
 
 
  body {
-   font: 10px sans-serif;
+   font: 1em sans-serif;
  }
 
  .axis path,
@@ -31,36 +31,36 @@
  .line {
    fill: none;
    stroke: steelblue;
-   stroke-width: 1.5px;
+   stroke-width: 2.5px;
  }
  text.line {
   fill: steelblue;
   stroke: none;
-  font-size: 14px;
+  font-weight: bold;
  }
 
  .cell {
   fill: none;
   stroke: black;
-  stroke-width: 1.5px;
+  stroke-width: 2.5px;
  }
 
  text.cell {
   fill: black;
   stroke: none;
-  font-size: 14px;
+  font-weight: bold;
  }
 
  .broad {
   fill: none;
   stroke: tomato;
-  stroke-width: 1.5px;
+  stroke-width: 2.5px;
  }
 
  text.broad {
   fill: tomato;
   stroke: none;
-  font-size: 14px;
+  font-weight: bold;
  }
 
  .countries_list {
@@ -74,8 +74,21 @@
   cursor: pointer;
  }
 
- svg {
-  position: absolute;
+ .chart {
+  position: fixed;
  }
 
- h1.title { margin-left: 400px; }
+ h1 {
+  text-align: center;
+}
+
+h1.title span {
+  text-decoration: underline;
+}
+
+@media (max-width: 1615px) {
+  .countries_list, .chart {
+    position: static;
+    display: block;
+  }
+}

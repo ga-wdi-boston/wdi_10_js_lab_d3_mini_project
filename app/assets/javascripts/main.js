@@ -181,7 +181,7 @@ DataApp.drawLines = function () {
     .enter()
     .append("text")
       .attr("class", function (d) { return d.code; })
-      .attr("x", function (d, i) { return i * 300})
+      .attr("x", function (d, i) { return i * 320})
       .attr("y", 10)
       .text(function (d) { return d.name; });
 }
