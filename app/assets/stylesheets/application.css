@@ -78,6 +78,10 @@
   position: fixed;
  }
 
+ .chart p {
+  text-align: center;
+ }
+
  h1 {
   text-align: center;
 }
