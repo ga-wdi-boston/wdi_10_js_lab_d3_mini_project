@@ -6,7 +6,11 @@ var bubble = d3.layout.pack()
     .size([diameter, diameter])
     .padding(1.5);
 
-TownBubbes = function(url) {
+TownBubbes = function(url,titleText) {
+
+  var townsTitle = document.getElementById('towns-title');
+  townsTitle.innerHTML = "<h3>" + titleText + "</h3>";
+
   d3.json(url, function(error, towns){
     var color = d3.scale.category20b();
     var node = d3.select("#towns-container")
@@ -62,11 +66,11 @@ var topTownRender = function(event){
   debugger;
   event.preventDefault();
   d3.select("#towns-container").selectAll(".node").remove();
-  TownBubbes('/towns.json');
+  TownBubbes('/towns.json', "Towns with: 15 or more doppelgangers" );
   return false;
 };
 
-TownBubbes('/towns/index.json');
+TownBubbes('/towns/index.json', "Towns with: at least one doppelganger");
 topTownButton = document.getElementById('top-town-button');
 topTownButton.addEventListener('click', topTownRender, false);
 
