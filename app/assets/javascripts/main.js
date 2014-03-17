@@ -78,15 +78,23 @@ function transformData(json) {
 }
 
 var topTownRender = function(event){
-  debugger;
   event.preventDefault();
   d3.select("#towns-container").selectAll(".node").remove();
   TownBubbes('/towns.json', "Towns with: 15 or more doppelgangers" );
   return false;
 };
 
+var allTownRender = function(event){
+  event.preventDefault();
+  d3.select("#towns-container").selectAll(".node").remove();
+  TownBubbes('/towns/index.json', "Towns with: at least one doppelganger" );
+  return false;
+};
+
 TownBubbes('/towns/index.json', "Towns with: at least one doppelganger");
+allTownsButton = document.getElementById("all-dup-button");
 topTownButton = document.getElementById('top-town-button');
+allTownsButton.addEventListener('click', allTownRender, false);
 topTownButton.addEventListener('click', topTownRender, false);
 
 
