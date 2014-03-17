@@ -6,10 +6,6 @@ var bubble = d3.layout.pack()
     .size([diameter, diameter])
     .padding(1.5);
 
-var tooltip = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("opacity", 0);
-
 TownBubbes = function(url,titleText) {
 
   var townsTitle = document.getElementById('towns-title');
