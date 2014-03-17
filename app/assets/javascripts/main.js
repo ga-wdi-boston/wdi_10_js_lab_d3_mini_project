@@ -37,8 +37,8 @@ TownBubbes = function(url,titleText) {
                  });
 
         node.append('circle')
-                 .attr('r', function(d){
-                    return d.r;
+                 .attr('r', function(town){
+                    return town.r;
                   })
                  .style("fill", function(town) {
                     return color(town.value);
@@ -49,8 +49,15 @@ TownBubbes = function(url,titleText) {
 
         node.append('text')
             .text(function(town){return town.name;})
-            .style("text-anchor", "middle")
-            .attr("class", "text-name" );
+            .attr("class" , function(town){
+
+              if(url === "/towns/index.json"){
+                return "text-name all-towns"
+              } else {
+                return "text-name top-towns"
+              }
+            })
+            .style("text-anchor", "middle");
 
        node.append('text')
            .text(function(town){return parseInt(town.value);})

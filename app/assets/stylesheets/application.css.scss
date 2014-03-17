@@ -14,10 +14,11 @@
 
 @import "bootstrap";
 
+
 #towns-frame {
   position:absolute ;
   left:50% ;
-  margin-left: -1750px;
+  margin-left: -700px;
 }
 
 #towns-title {
@@ -25,17 +26,10 @@
 }
 
 body {
-  text-align: center;
+  text-align: left;
 }
 
-.display {
-  display: inline;
-}
-
-.no-display {
-  display: none;
-}
-
-.no-display.display {
-  display: inline;
+.text-name.top-towns{
+  font-weight: bold;
+  font-size: 30pt;
 }
