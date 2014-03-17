@@ -58,7 +58,19 @@ function transformData(json) {
   return new_data;
 }
 
+var topTownRender = function(event){
+  debugger;
+  event.preventDefault();
+  d3.select("#towns-container").selectAll(".node").remove();
+  TownBubbes('/towns.json');
+  return false;
+};
+
 TownBubbes('/towns/index.json');
+topTownButton = document.getElementById('top-town-button');
+topTownButton.addEventListener('click', topTownRender, false);
+
+
 
 
 
