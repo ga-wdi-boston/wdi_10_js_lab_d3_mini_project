@@ -6,7 +6,7 @@
   <h1>Countries</h1>
   <ul>
     <% @countries.each do |country| %>
-      <%= content_tag(:li, country.name, data: country.id) %>
+      <%= content_tag(:li, country.name, id: country.code, data: country.id) %>
     <% end %>
   </ul>
 </div>

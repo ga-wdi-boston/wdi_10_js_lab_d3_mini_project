@@ -1,7 +1,7 @@
 var DataApp = DataApp || {};
 
 DataApp.init = function () {
-  DataApp.getData('/countries', DataApp.drawLines);
+  DataApp.getData('/countries/496', DataApp.drawLines);
   console.log("this in init is " + this)
   $(".countries_list").on("click", function (event) {
     event.preventDefault;
@@ -23,6 +23,10 @@ DataApp.getData = function (url, callback) {
     var map = d3.map(data.years);
     $('h1.title span').html(data.name)
     map.forEach(function (index, d) {
+      var countryEl = $("#" + data.code),
+        oldEl = $(".selected");
+      oldEl.removeClass("selected");
+      countryEl.addClass("selected")
       // organize data
       switch (d.indicator.code) {
         case "SP.POP.TOTL":
@@ -115,6 +119,7 @@ DataApp.drawLines = function () {
   // Set up generators
   DataApp.xAxis = d3.svg.axis()
       .scale(DataApp.x)
+      .tickFormat(d3.format("g"))
       .orient("bottom");
 
   DataApp.yAxis = d3.svg.axis()
