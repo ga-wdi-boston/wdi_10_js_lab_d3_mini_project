@@ -6,6 +6,10 @@ var bubble = d3.layout.pack()
     .size([diameter, diameter])
     .padding(1.5);
 
+var tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
 TownBubbes = function(url,titleText) {
 
   var townsTitle = document.getElementById('towns-title');
@@ -14,22 +18,27 @@ TownBubbes = function(url,titleText) {
   d3.json(url, function(error, towns){
     var color = d3.scale.category20b();
     var node = d3.select("#towns-container")
-                    .attr("width", diameter)
-                    .attr("height", diameter)
-                    .attr("class", "bubble")
-                    .selectAll("g")
-                    .data(bubble.nodes(transformData(towns)).filter(function(town){
-                      return !town.children;
-                    }))
-                    .enter()
-                    .append("g")
-                    .attr("transform", function(town){
-                      var val, translate;
-                      val = town.name.length * 10;
-                      translate = "translate(" + town.x  + "," +  town.y +  ")";
-                      return translate
-                    })
-                    .attr("class", "node");
+                 .attr("width", diameter)
+                 .attr("height", diameter)
+                 .attr("class", "bubble")
+                 .selectAll("g")
+                 .data(bubble.nodes(transformData(towns)).filter(function(town){
+                    return !town.children;
+                 }))
+                 .enter()
+                 .append("g")
+                 .attr("transform", function(town){
+                    var translate;
+                    translate = "translate(" + town.x  + "," +  town.y +  ")";
+                    return translate
+                 })
+                 .attr("class", "node")
+                 .on("mouseover", function(town) {
+                    d3.select(this).select(".text-count").style("display", "block");
+                 })
+                 .on("mouseout", function(town) {
+                    d3.select(this).select(".text-count").style("display", "none");
+                 });
 
         node.append('circle')
                  .attr('r', function(d){
@@ -43,16 +52,19 @@ TownBubbes = function(url,titleText) {
                   });
 
         node.append('text')
-                 .text(function(town){return town.name;})
-                 .style("text-anchor", "middle");
+            .text(function(town){return town.name;})
+            .style("text-anchor", "middle")
+            .attr("class", "text-name" );
 
-        node.append('text')
-                 .text(function(town){return parseInt(town.value);})
-                 .style("text-anchor", "middle")
-                 .attr("transform", function(town){
-                      translate = "translate(" + 0  + "," +  15 +  ")";
-                      return translate
-                    });
+       node.append('text')
+           .text(function(town){return parseInt(town.value);})
+           .style("text-anchor", "middle")
+           .style("display", "none")
+           .attr("transform", function(town){
+              translate = "translate(" + 0  + "," +  15 +  ")";
+              return translate
+            })
+           .attr('class', 'text-count');
   });
 };
 
