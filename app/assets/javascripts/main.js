@@ -6,14 +6,8 @@ var bubble = d3.layout.pack()
     .size([diameter, diameter])
     .padding(1.5);
 
-var jsonData;
-
-$.getJSON('/towns/index.json').then(function(results){
-  jsonData = results;
-});
-
-TownBubbes = function() {
-  d3.json('/towns/index.json', function(error, towns){
+TownBubbes = function(url) {
+  d3.json(url, function(error, towns){
     var color = d3.scale.category20b();
     var node = d3.select("#towns-container")
                     .attr("width", diameter)
@@ -64,7 +58,7 @@ function transformData(json) {
   return new_data;
 }
 
-TownBubbes();
+TownBubbes('/towns/index.json');
 
 
 

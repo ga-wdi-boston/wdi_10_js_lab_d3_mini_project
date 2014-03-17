@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'd3_rails'
 gem 'active_model_serializers'
+gem 'bootstrap-sass', '~> 3.1.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

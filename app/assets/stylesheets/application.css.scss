@@ -12,6 +12,16 @@
  *= require_tree .
  */
 
-#towns-container {
+@import "bootstrap";
+
+#towns-frame {
+  position:absolute ;
+  left:50% ;
+  margin-left: -1750px;
+  top:50% ;
+  margin-top: -218px;
+}
+
+body {
   text-align: center;
 }
