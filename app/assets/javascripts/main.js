@@ -17,13 +17,13 @@ $(document).ready(function(){
         .data(data)
       .enter().append("g")
         .attr("class", "node")
-        .attr("transform", function(d, index) { return "translate(" + 30 + "," + 30 + ")"; });
+        .attr("transform", function(d, index) { return "translate(" + 30 + "," + 30 + ")"; }); //To do: Instead of 30, want these values to position bubbles within the svg, without overlapping
 
     node.append("title") // For each node, append a title of the name of the project
         .text(function(d) { return d.name });
 
     node.append("circle") // For each node, append a circle element
-        .attr("r", function(d) { return d.funding * .00001 })
+        .attr("r", function(d) { return d.funding * .00001 }) //To do: want this function to scale the radius of each circle based on its funding amount
         .style("fill", function(d) { return color(d.category); });
 
     node.append("text") // For each node, append text
