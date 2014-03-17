@@ -1,5 +1,5 @@
 
-var diameter = 5000;
+var diameter = 3500;
 
 var bubble = d3.layout.pack()
     .sort(null)
@@ -14,7 +14,7 @@ $.getJSON('/towns/index.json').then(function(results){
 
 TownBubbes = function() {
   d3.json('/towns/index.json', function(error, towns){
-    var color = d3.scale.category20();
+    var color = d3.scale.category20b();
     var node = d3.select("#towns-container")
                     .attr("width", diameter)
                     .attr("height", diameter)
