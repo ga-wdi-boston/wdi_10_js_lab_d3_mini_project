@@ -12,15 +12,7 @@
  *= require_tree .
  */
 
-.bar {
-  fill: steelblue;
-}
-
-.bar:hover {
-  fill: brown;
-}
-
-.axis {
+body {
   font: 10px sans-serif;
 }
 
@@ -31,6 +23,6 @@
   shape-rendering: crispEdges;
 }
 
-/*.x.axis path {
-  display: none;
-}*/
+.dot {
+  stroke: #000;
+}
