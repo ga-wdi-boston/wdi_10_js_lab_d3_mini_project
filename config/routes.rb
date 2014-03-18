@@ -1,6 +1,5 @@
 D3Visualizer::Application.routes.draw do
-
-  get "delays/index"
-  get "carriers/index"
+  resources :carriers, :only => [:index, :show]
   root "carriers#index"
+
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140314150624) do
+ActiveRecord::Schema.define(version: 20140314225740) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,11 +25,6 @@ ActiveRecord::Schema.define(version: 20140314150624) do
   create_table "delays", force: true do |t|
     t.integer  "day_of_week"
     t.integer  "carrier_id"
-    t.integer  "arrival_delay"
-    t.integer  "departure_delay"
-    t.integer  "year"
-    t.string   "origin_code"
-    t.string   "destination_code"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
