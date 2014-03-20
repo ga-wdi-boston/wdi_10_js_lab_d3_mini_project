@@ -1,0 +1,150 @@
+create a new rails app
+  clean up database.yml
+  update gemfile
+  bundle
+
+download data source
+  in this example, it's json
+
+mkdir app/assets/data
+  save data source here
+
+------------------------------------------------------
+
+SET UP THE DATABASE BEFORE IMPORTING DATA
+
+rails g model Employees name:text department:text total_salary:integer regular_pay:integer overtime_pay:integer injury_pay:integer zipcode:integer
+
+(this creates a model and a migration)
+
+rake db:create
+
+rake db:migrate
+
+------------------------------------------------------
+
+IMPORT THE DATA
+
+touch lib/tasks/import.rake
+
+add:
+  require "#{Rails.root}/lib/import/import_employees.rb"
+
+  namespace :import do
+    desc "Import the Boston salaries data"
+    task employees: :environment do
+      ImportEmployees.import
+    end
+
+  end
+
+touch lib/import/import_employees.rb
+
+add:
+  class ImportEmployees
+
+    # class method, so use self.method_name
+    def self.import
+      file = File.read("#{Rails.root}/app/assets/data/boston_salaries.json")
+      all_data = JSON.parse(file)
+      meta_data = all_data["meta"]
+      employee_data = all_data["data"]
+
+      employee_data.each do |employee|
+        Employee.create!(
+          name: employee[8].to_s,
+          department: employee[10].to_s,
+          total_salary: employee[18].to_i,
+          regular_pay: employee[11].to_i,
+          overtime_pay: employee[14].to_i,
+          injury_pay: employee[15].to_i,
+          zipcode: employee[19].gsub(/-..../, '')) # make zip only 5 digits
+
+        puts "Imported #{employee.inspect}"
+      end
+    end
+  end
+
+  (or you can do manual sql queries...)
+
+  employee_data.each do |employee|
+
+    # escape the fucking apostrophes
+    name = employee[8].gsub(/'/,"''").gsub(/,/,', ').strip.to_s
+    department = employee[10].strip.gsub(/'/,"''").to_s
+    total_salary = employee[18].strip.to_i
+    regular_pay = employee[11].strip.to_i
+    overtime_pay = employee[14].strip.to_i
+    injury_pay = employee[15].strip.to_i
+    zipcode = employee[19].strip.gsub(/-..../,'').gsub(/UNKNOWN/,'00000').to_i
+
+    raw_sql =
+      "INSERT INTO employees (
+        name,
+        department,
+        total_salary,
+        regular_pay,
+        overtime_pay,
+        injury_pay,
+        zipcode)
+      VALUES (
+        \'#{name}\',
+        \'#{department}\',
+        \'#{total_salary}\',
+        \'#{regular_pay}\',
+        \'#{overtime_pay}\',
+        \'#{injury_pay}\',
+        \'#{zipcode}\'
+      )"
+
+      ActiveRecord::Base.connection.execute(raw_sql)
+
+      puts "Imported #{name}"
+
+  end
+
+------------------------------------------------------
+
+GET THE DATA INTO RAILS AND JAVASCRIPT-LAND
+
+in routes.rb, add:
+  D3Visualizer::Application.routes.draw do
+    root "employees#index"
+    get "employees/index" # need BOTH of these!
+  end
+
+touch app/assets/javascripts/main.js
+
+add:
+  $(document).ready(function(){
+
+    $.get('/employees/index.json')
+      .success(function(data) {
+        console.log(data[0])
+        console.log("success! first object above")
+      });
+
+  });
+
+touch app/controllers/employees_controller.rb
+
+add:
+  class EmployeesController < ApplicationController
+    def index
+      @employees = Employee.where(department: "Boston Public Library")
+      respond_to do |format|
+        format.html
+        format.json {render json: @employees, root: false }
+      end
+    end
+  end
+
+touch app/views/employees/index.html.erb
+
+add:
+  <div id='container'>
+  </div>
+
+---------------------------------------------------
+
+now you are ready to play with d3!
